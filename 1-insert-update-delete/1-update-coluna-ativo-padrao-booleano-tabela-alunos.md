@@ -1,0 +1,1 @@
+Atualize o campo ativo para padrão booleano (true/false)

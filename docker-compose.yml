@@ -6,6 +6,9 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: escola
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: senha123
     ports:
       - "3306:3306"
     volumes:

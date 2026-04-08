@@ -1,0 +1,1 @@
+Remova turmas sem curso válido

@@ -1,0 +1,1 @@
+Adicione uma coluna data_nascimento na tabela professores, escolhendo o tipo que melhor represente o dado.
