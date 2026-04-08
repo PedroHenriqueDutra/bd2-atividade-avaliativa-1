@@ -1,0 +1,1 @@
+Liste cada turma e a média das notas dos alunos, ordenando da maior para a menor média.

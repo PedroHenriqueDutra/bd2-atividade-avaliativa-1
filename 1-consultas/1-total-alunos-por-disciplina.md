@@ -1,0 +1,1 @@
+Liste o nome das disciplinas e o total de alunos matriculados em cada disciplina.

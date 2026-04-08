@@ -1,0 +1,1 @@
+Liste o nome das disciplinas e o valor total arrecadado (soma de valor_pago) em cada uma.

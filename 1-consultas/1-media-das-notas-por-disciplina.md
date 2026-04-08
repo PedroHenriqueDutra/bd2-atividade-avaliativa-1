@@ -1,0 +1,1 @@
+Liste cada disciplina e a média das notas dos alunos.

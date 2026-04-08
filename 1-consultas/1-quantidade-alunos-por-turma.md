@@ -1,0 +1,1 @@
+Liste o nome das turmas e a quantidade de alunos matriculados em cada uma delas.

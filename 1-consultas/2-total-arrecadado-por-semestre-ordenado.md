@@ -1,0 +1,1 @@
+Liste os semestres e o valor total arrecadado em cada semestre, ordenando do maior para o menor valor.

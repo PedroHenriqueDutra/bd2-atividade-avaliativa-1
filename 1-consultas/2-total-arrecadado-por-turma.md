@@ -1,0 +1,1 @@
+Liste os professores e o valor total arrecadado pelas suas turmas.

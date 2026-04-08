@@ -1,0 +1,1 @@
+Liste os cursos e o total arrecadado por curso, ordenando do maior para o menor valor.

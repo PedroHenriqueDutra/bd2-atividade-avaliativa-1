@@ -1,0 +1,1 @@
+Liste as disciplinas e o total arrecadado, considerando apenas matrículas de alunos ativos.

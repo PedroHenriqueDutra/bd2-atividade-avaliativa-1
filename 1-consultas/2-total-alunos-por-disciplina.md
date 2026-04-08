@@ -1,0 +1,1 @@
+Liste os cursos e a quantidade total de alunos matriculados em cada curso.

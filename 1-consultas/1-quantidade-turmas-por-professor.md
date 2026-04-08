@@ -1,0 +1,1 @@
+Liste o nome dos professores e a quantidade de turmas que cada um ministra.

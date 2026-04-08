@@ -1,0 +1,1 @@
+Liste os professores e a média das notas dos alunos em suas turmas.

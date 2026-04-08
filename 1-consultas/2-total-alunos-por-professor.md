@@ -1,0 +1,1 @@
+Liste os professores e a quantidade total de alunos que eles atendem (somando todas as turmas).

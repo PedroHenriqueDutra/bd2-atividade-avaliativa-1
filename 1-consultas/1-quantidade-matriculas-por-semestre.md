@@ -1,0 +1,1 @@
+Liste os semestres existentes e a quantidade total de matrículas em cada semestre.
