@@ -6,39 +6,39 @@ COLLATE utf8mb4_unicode_ci;
 USE escola;
 
 CREATE TABLE alunos (
-    id INT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
+    id INT(8) PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
     data_nascimento DATE NOT NULL,
     ativo BOOLEAN NOT NULL
 ) CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE cursos (
-    id INT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL
+    id INT(8) PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
 ) CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE disciplinas (
-    id INT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    curso_id INT NOT NULL,
+    id INT(8) PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    curso_id INT(8) NOT NULL,
     FOREIGN KEY (curso_id) REFERENCES cursos(id)
 ) CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE professores (
-    id INT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
+    id INT(8) PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
     salario DECIMAL(10,2) NOT NULL
 ) CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE turmas (
-    id INT PRIMARY KEY,
-    disciplina_id INT NOT NULL,
-    professor_id INT NOT NULL,
+    id INT(8) PRIMARY KEY,
+    disciplina_id INT(8) NOT NULL,
+    professor_id INT(8) NOT NULL,
     semestre VARCHAR(10) NOT NULL,
     FOREIGN KEY (disciplina_id) REFERENCES disciplinas(id),
     FOREIGN KEY (professor_id) REFERENCES professores(id)
@@ -46,17 +46,17 @@ CREATE TABLE turmas (
 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE matriculas (
-    id INT PRIMARY KEY,
-    aluno_id INT NOT NULL,
-    turma_id INT NOT NULL,
+    id INT(8) PRIMARY KEY,
+    aluno_id INT(8) NOT NULL,
+    turma_id INT(8) NOT NULL,
     FOREIGN KEY (aluno_id) REFERENCES alunos(id),
     FOREIGN KEY (turma_id) REFERENCES turmas(id)
 ) CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE notas (
-    id INT PRIMARY KEY,
-    matricula_id INT NOT NULL,
+    id INT(8) PRIMARY KEY,
+    matricula_id INT(8) NOT NULL,
     nota DECIMAL(5,2) NOT NULL,
     FOREIGN KEY (matricula_id) REFERENCES matriculas(id)
 ) CHARACTER SET utf8mb4
@@ -64,7 +64,7 @@ COLLATE utf8mb4_unicode_ci;
 
 
 
-INSERT INTO alunos VALUES
+INSERT INT(8)O alunos VALUES
 (1,'Ana','ana@email.com','2000-01-01',true),
 (2,'Bruno','bruno@email.com','2000-01-01',true),
 (3,'Carlos','carlos@email.com','2000-01-01',true),
@@ -88,12 +88,12 @@ INSERT INTO alunos VALUES
 
 
 
-INSERT INTO cursos VALUES
+INSERT INT(8)O cursos VALUES
 (1,'Sistemas de Informação'),
 (2,'Engenharia de Software');
 
 
-INSERT INTO disciplinas VALUES
+INSERT INT(8)O disciplinas VALUES
 (1,'Banco de Dados',1),
 (2,'Engenharia de Software',1),
 (3,'Redes',1),
@@ -101,14 +101,14 @@ INSERT INTO disciplinas VALUES
 (5,'Testes de Software',2);
 
 
-INSERT INTO professores VALUES
+INSERT INT(8)O professores VALUES
 (1,'João',5000),
 (2,'Maria',7000),
 (3,'Carlos',4500);
 
 
 
-INSERT INTO turmas VALUES
+INSERT INT(8)O turmas VALUES
 (1,1,1,'2026-1'),
 (2,2,2,'2026-1'),
 (3,3,3,'2026-1'),
@@ -117,7 +117,7 @@ INSERT INTO turmas VALUES
 
 
 
-INSERT INTO matriculas VALUES
+INSERT INT(8)O matriculas VALUES
 (1,1,1),(2,2,1),(3,3,1),(4,4,1),
 (5,5,2),(6,6,2),(7,7,2),(8,8,2),
 (9,9,3),(10,10,3),(11,11,3),(12,12,3),
@@ -131,7 +131,7 @@ INSERT INTO matriculas VALUES
 
 
 
-INSERT INTO notas VALUES
+INSERT INT(8)O notas VALUES
 (1,1,8),(2,2,7),(3,3,9),(4,4,6),
 (5,5,8),(6,6,7),(7,7,5),(8,8,9),
 (9,9,6),(10,10,7),(11,11,8),(12,12,9),
