@@ -1,1 +1,7 @@
-Liste os professores e a quantidade total de alunos que eles atendem (somando todas as turmas).
+SELECT 
+    p.nome AS professor,
+    COUNT(DISTINCT m.aluno_id) AS total_alunos
+FROM professores p
+JOIN turmas t ON t.professor_id = p.id
+JOIN matriculas m ON m.turma_id = t.id
+GROUP BY p.id, p.nome;
